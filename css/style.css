@@ -1,0 +1,432 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+header{
+    position: absolute;
+    width: 100%;
+    top:0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 1px 7%;
+    margin-top: -40px;
+}
+
+
+.logo img{
+    max-width: 100%;
+    width:  180px;
+    height: auto;
+
+}
+
+.navbar{
+    display: flex;
+
+}
+
+.navbar li{
+    position: relative;
+}
+
+.navbar a{
+    color: #161616;
+    font-weight: 500;
+    font-size: 1.3rem;
+    padding: 10px 20px;
+    
+}
+
+.navbar a::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #460aec;
+    left: 0;
+    bottom: -4px;
+    transition: ease .42s;
+    
+}
+
+.navbar a:hover:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #460aec;
+    left: 0;
+    bottom: -4px;
+    transition: ease .42s;
+    
+}
+
+#menu_icon{
+    font-size: 30px;
+    color: #161616;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+
+
+.btn{
+    font-size: 14px;
+    display: inline-flex;
+    justify-content: center;
+    font-weight: 600;
+    height: 60px;
+    line-height: 60px;
+    background: #460aec;
+    color: #ffff;
+    border-radius: 10px;
+    padding: 0 38px;
+    text-transform: uppercase;
+    transition: all .34s;
+}
+
+
+.btn:hover{
+    opacity: 0.8;
+    transform: translateY(-10px);
+}
+section{
+    padding: 0 16%;
+}
+
+.container{
+    height: 98vh;
+    width: 100%;
+    background: url(../img/Brenno\ M.\(3\).png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    align-items: center;
+}
+
+.container_card{
+    height: 50vh;
+    width: 100%;
+    background: #460aec;    
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    align-content: center;
+}
+
+
+.container_card h1{
+    text-align: center;
+
+    font-size: 50px;
+    font-weight: 400;
+    color: white;
+    line-height: 0.9;
+    margin: 0 0 0 0;
+}
+
+.carousel{
+    margin: 50px;
+}
+
+.text{
+    padding-top: 40px;
+
+}
+
+.text .slide{
+    margin-bottom: 20px;
+
+}
+
+.text .one{
+    height: 40px;
+    padding: 0px 15px;
+    line-height: 40px;
+    font-size: 24px;
+    font-weight: 500;
+    border-radius: 5px;
+    background: #460aec;
+    color: #fff;
+    display: inline-block;
+    margin-right: 22px;
+}
+
+.text .two{
+    font-size: 24px;
+    color: #161616;
+    display: inline-block;
+    font-weight: 500;
+}
+
+.text h1{
+    font-size: 120px;
+    font-weight: 700;
+    color: #161616;
+    line-height: 0.9;
+    margin:0 0 8px;
+}
+
+.text h2{
+    color: #161616;
+    margin: 0 0 30px;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 1;
+
+}
+
+span{
+    color: #ef0454;
+}
+
+.text p{
+    color: #6a6a6a;
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.button{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.btn2{
+    font-size: 14px;
+    font-weight: 600;
+    color: #161616;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
+}
+
+
+.btn2 span i{
+    height: 70px;
+    width: 70px;
+    background: #fff;
+    color: #ef0454;
+    font-size: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0px 10px 8px rgb(3 12 29 / 18%);
+    margin-right: 20px;
+    transition: ease .30s;
+}
+
+@media (max-width: 1380px){
+    header{
+        padding: 18px 2%;
+        transition: .2s;
+    }
+    section{
+        padding: 0 2%;
+        transition: .2s;
+    }
+}
+
+@media (max-width: 1120px){
+    header{
+        padding: 14px 2%;
+    }
+
+    #menu_icon{
+        display: initial;
+    }
+    .text h1{
+        font-size: 78px;
+
+    }
+
+    .text h2{
+        font-size: 58px;
+        transition: .2s;
+    }
+
+    .text p{
+        font-size: 17px;
+        transition: .2s;
+    }
+
+    .btn{
+        height: 50px;
+        line-height: 50px;
+        padding: 0 28px;
+    }
+
+    .btn2{
+        margin-left: 20px;
+    }
+
+    .btn2 span i{
+        height: 50px;
+        width: 50px;
+        font-size: 30px;
+    }
+
+    .navbar{
+        position: absolute;
+        top: -400px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: #460aec;
+        text-align: left;
+        transition: all .35s ease;
+    }
+
+
+    .navbar a{
+        display: block;
+        padding: 1rem;
+    }
+
+
+    .navbar a:hover{
+        background: #1111;
+    }
+
+    .navbar a::after{
+        display: none;
+    }
+
+    .navbar .active{
+        top:100%;
+        
+    }
+
+    .container{
+        margin-top: 50px;
+    }
+
+}
+
+
+
+@media (max-width: 640px){
+    section{
+        padding: 0 3%;
+    }
+
+    header{
+        padding: 14px 3%;
+    }
+}
+
+
+
+
+main.cards {
+    display: flex;
+    justify-content: center;
+    padding: 32px;
+}
+
+main.cards section.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: white;
+    padding: 3rem 3.5rem;
+    border-radius: 8px;
+    max-height: 468px;
+    margin-left: 32px;
+}
+
+main.cards section.card:first-child {
+    margin-left: 10;
+}
+
+main.cards section.card .icon {
+    width: 100px;
+    height: 100px;
+}
+
+main.cards section.card img {
+    width: 100%;
+}
+
+main.cards section.card h3 {
+    font-size: 100%;
+    margin: 16px 0;
+}
+
+main.cards section.card span {
+    font-weight: 300;
+    max-width: 240px;
+    font-size: 80%;
+    margin-bottom: 16px;
+}
+
+main.cards section.card button {
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    border-radius: 32px;
+    border: 0;
+    cursor: pointer;
+    font-size: 80%;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 16px 0;
+}
+
+main.cards section.card.contact button {
+    background: #460aec;
+}
+main.cards section.card.shop button {
+    background: #460aec;
+}
+main.cards section.card.about button {
+    background: #460aec;
+}
+
+main.cards section.card.contact {
+    box-shadow: #460aec;
+}
+main.cards section.card.shop {
+    box-shadow: #460aec;
+}
+main.cards section.card.about {
+    box-shadow: #460aec;
+}
+
+@media screen and (max-width: 720px) {
+    main.cards {
+        flex-direction: column;
+    }
+
+    main.cards section.card {
+        margin-left: 0;
+        margin-bottom: 32px;
+    }
+
+    main.cards section.card:last-child {
+        margin-bottom: 0;
+    }
+
+    main.cards section.card button {
+        font-size: 70%;
+    }
+
+}
